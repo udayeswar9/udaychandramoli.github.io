@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Chandramoli U S S Parvatheeswar- UI/UX &amp; Web Designer</title> 
+  <style>
+    :root {
+      --primary: #2a2246;
+      --accent: #d175b6;
+      --bg: #11325f;
+      --text: #ffffff;
+    }* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, var(--bg), #000000);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1.5rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: var(--accent);
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #f497c3;
+  transform: scale(1.05);
+}
+
+.about, .skills {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--accent);
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+.skills li {
+  background-color: var(--accent);
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background-color: #000;
+  color: var(--accent);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style> 
+ </head> 
+ <body> 
+  <header> 
+   <h1>Chandramoli U S S Parvatheeswar</h1> 
+   <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.behance.net/udaychandra7" target="_blank">Behance</a>
+    <a href="pdf/Uday_UIUX (1).pdf" target="_blank">View Resume</a>
+  </nav>  
+  </header> 
+  <section class="hero"> 
+   <h2>Hello, I'm a UI/UX &amp; Web Designer</h2> 
+   <p>I create intuitive user interfaces and clean, responsive websites using Figma, Adobe XD, HTML, and CSS.</p> <a href="#projects" class="button">View Projects</a> 
+  </section> 
+  <section id="about" class="about"> 
+   <h2>About Me</h2> 
+   <p>I’m a creative designer with a passion for building user-centered products. With a background in civil engineering and a sharp eye for detail, I blend function with aesthetic in everything I design.</p> 
+  </section> 
+  <section id="projects">
+    <h2 style="color: var(--accent); margin-bottom: 1rem;">UI/UX Design Projects</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="images/Slide 16_9 - 29.png" alt="App UI" style="width:100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3>SafeMeal App</h3>
+        <p>A climate-aware food delivery app designed with Figma. Includes weather-based delivery UX and field testing feedback.</p>
+        <a class="button" href="pdf/safemeal.pdf">View Case Study</a>
+      </div>
+      <div class="card">
+        <img src="images/aa.png" alt="App UI" style="width:100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3>Fitness App</h3>
+        <p>Mobile app for tracking workouts and setting fitness goals. Created with user-first design approach using Adobe XD.</p>
+        <a class="button" href="pdf/Fitness.pdf">View Case Study</a>
+      </div>
+      <div class="card">
+        <img src="images/Slide 16_9 - 28.png" alt="App UI" style="width:100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3>Fancy Shopping App</h3>
+        <p>Fashion e-commerce app featuring curated styles, wishlists, and vibrant UI transitions. Designed in Figma.</p>
+        <br><a class="button" href="pdf/FancyApp.pdf">View Case Study</a>
+      </div>
+    </div>
+  
+    <h2 style="color: var(--accent); margin: 3rem 0 1rem;">Web Technology Projects</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="images/MacBook Air - 1.png" alt="App UI" style="width:100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3>Netflix Homepage Clone</h3>
+        <p>A responsive Netflix homepage using HTML, CSS, and animations. Built to match pixel-perfect layout and transitions.</p>
+        <a class="button" href="#">View Demo</a>
+      </div>
+      <div class="card">
+        <img src="images/MacBook Air - 2.png" alt="App UI" style="width:100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3>Login Page Animations</h3>
+        <p>Creative login/signup forms with animated transitions and full responsiveness. Great for UI micro-interactions.</p>
+        <a class="button" href="#">View Demo</a>
+      </div>
+      <div class="card">
+        <img src="images/MacBook Air - 3.png" alt="App UI" style="width:100%; border-radius: 8px; margin-bottom: 1rem;">
+        <h3>eCommerce Homepage</h3>
+        <p>Fully responsive online store landing page with hero sections, product grids, and mobile optimizations.</p>
+        <a class="button" href="#">View Demo</a>
+      </div>
+    </div>
+  </section>  
+  <section id="skills" class="skills">
+    <h2>Skills & Tools</h2>
+    <h3 style="color: var(--accent); margin: 1rem 0 0.5rem;">🎨 UI/UX & Design Tools</h3>
+    <ul>
+      <li>Figma</li>
+      <li>Adobe XD</li>
+      <li>Miro</li>
+      <li>Photoshop</li>
+      <li>Illustrator</li>
+      <li>Canva</li>
+    </ul>
+  
+    <h3 style="color: var(--accent); margin: 2rem 0 0.5rem;">💻 Web Technologies</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+    </ul>
+  </section>
+  <section id="contact" class="about"> 
+   <h2>Contact</h2> 
+   <p>Reach me at <a href="mailto:chandramouliuday@gmail.com" style="color: var(--accent);">chandramouliuday@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/uday-chandramouli-67a338259" style="color: var(--accent);">LinkedIn</a>.</p> 
+  </section> 
+  <footer>
+    © 2025 Uday Chandramoli. All rights reserved. 
+  </footer> 
+ </body>
+</html>
